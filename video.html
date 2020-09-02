@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>VIDEO</title>
+    <style media="screen">
+      video{
+
+        border : 20px solid black;
+      }
+      h1:hover{
+        font-size : 100px;
+        color:red;
+        font-weight : 900;
+      }
+      video{
+        margin-top: 10%;
+        border-radius : 50%;
+      }
+      body{
+        background-color : orange;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1 id="title">WANT TO SEE THE VIDEO</h1>
+      <a href="gallery.html" target="_blank">want to see the cast of the video go to gallery</a>
+        <br>
+      <video src="billy.mp4" muted id="video">
+      </video>
+      <script>
+        var obj = document.getElementById("video");
+        obj.addEventListener("mouseenter", function(Event){
+          Event.target.play();
+        });
+        obj.addEventListener("mouseout", function(Event){
+          Event.target.pause();
+        })
+        var obj = document.querySelector("#title");
+        obj.addEventListener("mouseenter",function(event){
+          this.innerHTML="PLEASE HOVER  OVER IT THEN";
+        });
+      </script>
+      </center>
+
+  </body>
+</html>
