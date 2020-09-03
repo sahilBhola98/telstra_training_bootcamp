@@ -1,5 +1,5 @@
 // Define a Project class with id (number - public), name (string - public), 
-client (string - private). Define some Project objects (suggest using sample data below).
+//client (string - private). Define some Project objects (suggest using sample data below).
 // ```
 // const dbsPayroll = new Project( 1001, 'DBS payroll', 'DBS' );
 // const intranetDeployment = new Project( 2001, 'Intranet v2 deployment', 'Internal' );
