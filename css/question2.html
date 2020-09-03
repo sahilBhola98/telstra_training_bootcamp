@@ -1,0 +1,149 @@
+<!-- Question : design a website for telstra webpage iwth all column layout implemented and row and column implemented-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width:80%;
+            margin: 0 auto;
+        }
+        .row{
+            overflow:hidden;
+            margin-top:5%;
+        }
+        .row-mini{
+            overflow:hidden;
+            margi-top:0;
+        }
+        .col-2-left{
+            float:left;
+            width:42%;
+
+        }
+        .col-2-right{
+            float:left;
+            width:56%;
+            
+            
+        }
+        .img-contain{
+            width : 100%;
+        }
+        .image-sec{
+            padding-right:1%;
+        }
+        .text-sec{
+            padding-left:1%;
+        }
+        .col-2-small{
+            float:left;
+            width:40%;
+            height:100%
+        }
+        .text-sec-small{
+            padding-left:5%;
+        }
+        .col-2-mini-left{
+            float:left;
+            width:30%;
+            
+        }
+        .col-2-mini-right{
+            float:left;
+            width:67%;
+            
+        }
+        .image-sec-mini{
+            padding-right:1.5%;
+        }
+        .text-sec-mini{
+            padding-left:1.5%;
+        }
+        div.text-sec-mini p{
+            font-weight:bolder;
+            font-size:20px;
+            
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header class="navbar">
+
+    </header>
+    <div class="container">
+        <h2>Latest Updates</h2>
+        <div class="row">
+            <div class="col-2-left image-sec"><img class="img-contain" src="img1.jpg" alt="image1"></div>
+            <div class="col-2-right text-sec">
+                 <h4>5G from Telstra</h4>
+                <h2>Discover the power of Australia’s best 5G</h2>
+                <p>5G will change how we experience the world. 
+                    Fast downloads are just the beginning.</p>
+                
+                <a href="#">Find out how</a> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="row col-2-left image-sec-small">
+                <div class="col-2-small">
+                    <img src="img2.jpg" class="img-contain" alt="">
+                    <h4>News</h4>
+                   <h2>Supporting customers in Victoria</h2> 
+                   <p>With increased COVID-19 restrictions in Victoria, we 
+                       want to help our eligible customers stay connected.</p> 
+                    
+                    <a href="#">COVID-19 support for Victoria</a>
+                        
+                </div>
+                <div class="col-2-small text-sec-small">
+                    <img src="img3.jpg" class="img-contain" alt="">
+                    <h4>My Telstra app</h4>
+                    <h2>Help made easy</h2>
+                    <p> We've made changes for those who 
+                        can't talk right now. Message us anytime in the My Telstra app.
+                    </p>
+                   <a href="#">How to message us </a>
+                    <br/>
+                    <a href="#">Download the app</a>
+                </div>
+            </div>
+            <div class="col-2-right row">
+                <div class="row-mini">
+                    <div class="col-2-mini-left image-sec-mini">
+                        <img src="img4.jpg" class="img-contain" alt="">
+                    </div>
+                    <div class="col-2-mini-right text-sec-mini">
+                        <h4>News</h4>
+                        <p> Get extra data and lock in the price of your plan for 12 months for eligible customers</p>
+                    </div>
+                </div>
+                <div class="row-mini">
+                    <div class="col-2-mini-left image-sec-mini">
+                        <img src="img5.jpg" class="img-contain" alt="">
+                    </div>
+                    <div class="col-2-mini-right text-sec-mini">
+                        <h4>News</h4>
+                        <p> We’re proud to announce we’ve been certified carbon neutral</p>
+                    </div>
+                </div>
+                <div class="row-mini">
+                    <div class="col-2-mini-left image-sec-mini">
+                        <img src="img6.jpg" class="img-contain" alt="">
+                    </div>
+                    <div class="col-2-mini-right text-sec-mini">
+                        <h4>News</h4>
+                        <p> The way we live is changing, so we’re making changes too</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
