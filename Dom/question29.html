@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+        /*creating themes - primary, success, error*/
+        .heading{
+            background-color :  navy;
+            color : white;
+            border : 2px;
+            padding : 10px;
+        }
+        .textbody{
+            padding : 10px;
+        }
+        .panel{
+            border : 2px solid;
+            margin : 10px 0;
+            border-radius : 10px;   
+        }
+        .panel-primary{
+            border-color:navy;
+            box-shadow: 0 0 80px navy;
+
+        }
+        .success{
+            border-color:green;
+            box-shadow:0 0 80px chartreuse;
+        }
+        .error{
+            border-color:red;
+            box-shadow: 0 0 80px red;
+        }
+     .success .heading{
+            background-color:green;
+        }
+     .error .heading{
+            background-color:red;
+        }
+        body{
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="panel panel-primary">
+        <div class="heading">
+            What is Css
+        </div>
+        <div class="textbody">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima impedit culpa ratione officia corporis placeat magni perferendis quod, labore nesciunt, alias nostrum 
+            necessitatibus hic quisquam sapiente, illum quasi esse incidunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem maiores quos pariatur maxime dolore qui earum aliquid recusandae neque placeat, dignissimos possimus sit atque quis, delectus nihil doloremque voluptatem repudiandae.
+            Quasi, maxime. Dicta fugiat reiciendis quos aut est autem, accusamus ex! Odit aliquam consequatur aspernatur ullam maiores vitae enim odio nostrum eos officia, soluta accusantium qui, 
+            eveniet, sunt sint id!
+            Quaerat hic doloremque ullam 
+            eum ratione dignissimos tempore alias impedit? Eveniet nostrum, excepturi sequi quod praesentium iusto id vero mollitia obcaecati perferendis sunt voluptatibus nulla voluptates magni. Nemo, harum at.
+        </div>
+        
+    </div>
+    <div class="panel success">
+        <div class="heading">
+            What is Css
+        </div>
+        <div class="textbody">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima impedit culpa ratione officia corporis placeat magni perferendis quod, labore nesciunt, alias nostrum 
+            necessitatibus hic quisquam sapiente, illum quasi esse incidunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem maiores quos pariatur maxime dolore qui earum aliquid recusandae neque placeat, dignissimos possimus sit atque quis, delectus nihil doloremque voluptatem repudiandae.
+            Quasi, maxime. Dicta fugiat reiciendis quos aut est autem, accusamus ex! Odit aliquam consequatur aspernatur ullam maiores vitae enim odio nostrum eos officia, soluta accusantium qui, 
+            eveniet, sunt sint id!
+            Quaerat hic doloremque ullam 
+            eum ratione dignissimos tempore alias impedit? Eveniet nostrum, excepturi sequi quod praesentium iusto id vero mollitia obcaecati perferendis sunt voluptatibus nulla voluptates magni. Nemo, harum at.
+        </div>
+        
+    </div>
+
+    <div class="panel error">
+        <div class="heading">
+            What is Css
+        </div>
+        <div class="textbody">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima impedit culpa ratione officia corporis placeat magni perferendis quod, labore nesciunt, alias nostrum 
+            necessitatibus hic quisquam sapiente, illum quasi esse incidunt.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem maiores quos pariatur maxime dolore qui earum aliquid recusandae neque placeat, dignissimos possimus sit atque quis, delectus nihil doloremque voluptatem repudiandae.
+            Quasi, maxime. Dicta fugiat reiciendis quos aut est autem, accusamus ex! Odit aliquam consequatur aspernatur ullam maiores vitae enim odio nostrum eos officia, soluta accusantium qui, 
+            eveniet, sunt sint id!
+            Quaerat hic doloremque ullam 
+            eum ratione dignissimos tempore alias impedit? Eveniet nostrum, excepturi sequi quod praesentium iusto id vero mollitia obcaecati perferendis sunt voluptatibus nulla voluptates magni. Nemo, harum at.
+        </div>
+        
+    </div>
+    <script>
+        //toggling pane;
+        let heading1  = document.querySelectorAll(".heading");
+        for(let i=0;i<heading1.length;i++){
+            heading1[i].addEventListener("click",function(){
+            heading1[i].nextElementSibling.classList.toggle("hide");
+        });
+        }
+
+        
+        function convertToggle(obj){
+            obj.classList.toggle("hide");
+        }
+        let heading12  = document.querySelectorAll(".heading");
+        for(let i=0;i<heading12.length;i++){
+            convertToggle(heading12);
+        }
+        
+        
+
+    </script>
+    
+</body>
+</html>
