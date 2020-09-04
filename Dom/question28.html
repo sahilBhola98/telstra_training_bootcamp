@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <label for="name">USERNAME</label>
+        <input type="text" minlength="8">
+        <button type="submit" id="submit">SUBMIT</button>
+    </form>
+    <script>
+        //alerting input value
+        document.querySelector("#submit").addEventListener("click",function(){
+
+            let obj = document.querySelector("input");
+            alert(obj.value);
+        });
+
+        //checking for 8 and turning green
+        const obj1 = document.querySelector("input");
+        obj1.oninput=function(event){
+            if(event.target.value.length>=8)
+                obj1.style.backgroundColor="lightgreen";
+        }
+
+        //checking for error
+        document.querySelector("#submit").addEventListener("click",function(event){
+            if(obj1.value.length<8){
+                event.preventDefault();
+                obj1.style.backgroundColor="red";
+            }
+        });
+
+    </script>
+</body>
+</html>
