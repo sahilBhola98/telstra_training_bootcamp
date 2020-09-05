@@ -1,0 +1,12 @@
+nav ul{
+    list-style-type: none;
+}
+nav{
+  background-color: lightblue;
+  color : white;
+  padding : 0.5em 2em;
+}
+nav ul li{
+  display: inline-block;
+  padding : 0 0.25em 0 0;
+}
